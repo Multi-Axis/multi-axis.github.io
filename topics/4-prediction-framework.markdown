@@ -1,4 +1,7 @@
-## Prediction Framework
+---
+title: Prediction Framework
+date: 2014-12-12T00:00:00
+---
 
 A **prediction unit**, or a **forecast unit**, refers to an executable, say
 `my_regression_model.sh`, that must be named

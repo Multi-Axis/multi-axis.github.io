@@ -1,4 +1,7 @@
-# Backend server (Gobbix?)
+---
+title: Backend server (Gobbix?)
+date: 2014-12-12T00:00:00
+---
 
 This server (written in Go) handles passing data to and from html/javascript [front end](https://github.com/Multi-Axis/multi-axis-graphs/wiki/Server-view-front-end-notes) and dashboard to the [Habbix back end](https://github.com/Multi-Axis/multi-axis-graphs/blob/master/Doc/Habbix.md) and the [multi-axis database](https://github.com/Multi-Axis/multi-axis-graphs/blob/master/Doc/DatabaseAndData.md).
 

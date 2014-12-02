@@ -25,10 +25,9 @@ main = hakyll $ do
     match "index.html" $ do
         route idRoute
         compile $ do
-            posts <- recentFirst =<< loadAll "posts/*"
+            items <- chronological =<< loadAll "topics/*"
             let indexCtx =
-                    listField "posts" defaultContext (return posts) `mappend`
-                    constField "title" "Home"                       `mappend`
+                    listField "items" defaultContext (return items) `mappend`
                     defaultContext
 
             getResourceBody

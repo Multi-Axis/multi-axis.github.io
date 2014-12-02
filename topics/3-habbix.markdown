@@ -1,4 +1,7 @@
-# Habbix
+---
+title: Habbix
+date: 2014-12-12T00:00:00
+---
 
 ## Configuration
 

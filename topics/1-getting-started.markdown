@@ -1,4 +1,7 @@
-# Getting Started
+----
+title: Getting Started
+date: 2014-12-12T00:00:00
+----
 
 To get the database setup, simply configure `config.yaml` from habbix, possibly
 create the database (`createdb -O multi-axis multiaxis`) and then run `habbix

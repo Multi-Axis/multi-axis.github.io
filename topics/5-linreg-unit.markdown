@@ -1,4 +1,7 @@
-# Linreg Prediction Unit
+---
+title: Linreg Prediction Unit
+date: 2014-12-12T00:00:00
+---
 
 The `linreg` unit takes one optional paramater, `pre_filter`:
 

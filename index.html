@@ -1,10 +1,17 @@
 ---
-title: Multi-Axis
+title: Index
 ---
 
-<h2>Multi-Axis docs</h2>
-
-<h2>Topics</h2>
-$for(posts)$
-   $title$
+<ol>
+$for(items)$
+<li>
+   <a href=$url$>$title$</a>
+</li>
 $endfor$
+</ol>
+
+On Github:
+<a href="http://github.com/multi-axis/habbix.git">
+   Habbix</a>,
+<a href="http://github.com/multi-axis/multi-axis-graphs.git">
+   Web server and client-side</a>
