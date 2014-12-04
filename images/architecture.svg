@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="38cm" height="29cm" viewBox="-200 -112 759 573" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="36.25" y="80" width="207.5" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="36.25" y="80" width="207.5" height="60"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="140" y="105.9">
+      <tspan x="140" y="105.9">Habbix</tspan>
+      <tspan x="140" y="121.9">(Haskell)</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -180 233.333 C -148,223.333 -132,220 -100,220 C -68,220 -52,223.333 -20,233.333 L -20,286.667 C -52,296.667 -68,300 -100,300 C -132,300 -148,296.667 -180,286.667 L -180,233.333z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -180 233.333 C -148,223.333 -132,220 -100,220 C -68,220 -52,223.333 -20,233.333 L -20,286.667 C -52,296.667 -68,300 -100,300 C -132,300 -148,296.667 -180,286.667 L -180,233.333"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -180 233.333 C -148,243.333 -132,246.667 -100,246.667 C -68,246.667 -52,243.333 -20,233.333"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-100" y="262.667">
+      <tspan x="-100" y="262.667">Local PostgreSQL</tspan>
+      <tspan x="-100" y="278.667">"multi-axis"</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -180 -6.66667 C -148,-16.6667 -132,-20 -100,-20 C -68,-20 -52,-16.6667 -20,-6.66667 L -20,46.6667 C -52,56.6667 -68,60 -100,60 C -132,60 -148,56.6667 -180,46.6667 L -180,-6.66667z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -180 -6.66667 C -148,-16.6667 -132,-20 -100,-20 C -68,-20 -52,-16.6667 -20,-6.66667 L -20,46.6667 C -52,56.6667 -68,60 -100,60 C -132,60 -148,56.6667 -180,46.6667 L -180,-6.66667"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -180 -6.66667 C -148,3.33333 -132,6.66667 -100,6.66667 C -68,6.66667 -52,3.33333 -20,-6.66667"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-100" y="22.6667">
+      <tspan x="-100" y="22.6667">Remote PostgreSQL</tspan>
+      <tspan x="-100" y="38.6667">"zabbix"</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="61.8382,-100 241.456,-100 219.618,-40 40,-40 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="61.8382,-100 241.456,-100 219.618,-40 40,-40 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="140.728" y="-66.1">
+      <tspan x="140.728" y="-66.1">Prediction executables</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="40" y="240" width="200" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="40" y="240" width="200" height="60"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="140" y="265.9">
+      <tspan x="140" y="265.9">Web server</tspan>
+      <tspan x="140" y="281.9">(Go)</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" d="M 103.926,72.6802 A 245.368,245.368 0 0 0 -18.9997,17.9805"/>
+    <polygon style="fill: #000000" points="109.608,77.5674 98.8401,74.5592 104.05,72.532 105.554,67.148 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="109.608,77.5674 98.8401,74.5592 104.05,72.532 105.554,67.148 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" d="M -9.93781,237.793 A 316.154,316.154 0 0 0 112.298,148.537"/>
+    <polygon style="fill: #000000" points="117.056,142.744 114.792,153.693 112.413,148.634 106.939,147.502 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="117.056,142.744 114.792,153.693 112.413,148.634 106.939,147.502 "/>
+    <polygon style="fill: #000000" points="-16.9049,240.561 -9.29259,232.372 -9.88097,237.931 -5.7867,241.738 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-16.9049,240.561 -9.29259,232.372 -9.88097,237.931 -5.7867,241.738 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" d="M -50.2986,302.765 A 155.699,155.699 0 0 0 93.1402,305.572"/>
+    <polygon style="fill: #000000" points="-56.7951,299.042 -45.6675,300.127 -50.444,303.032 -50.9864,308.595 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-56.7951,299.042 -45.6675,300.127 -50.444,303.032 -50.9864,308.595 "/>
+    <polygon style="fill: #000000" points="99.7774,302.107 93.5993,311.425 93.275,305.844 88.6158,302.755 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="99.7774,302.107 93.5993,311.425 93.275,305.844 88.6158,302.755 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="160" y="0">
+    <tspan x="160" y="0">habbix invokes prediction executables</tspan>
+    <tspan x="160" y="16">as described in the `model` table.</tspan>
+    <tspan x="160" y="32">- communication: JSON via stdin/stdout</tspan>
+    <tspan x="160" y="48">- configuration: `habbix configure`</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="140.563" y1="-29.2716" x2="140.165" y2="69.2716"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="140.594,-36.7715 145.553,-26.7514 140.563,-29.2716 135.553,-26.7918 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="140.134,76.7715 135.175,66.7514 140.165,69.2716 145.175,66.7918 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-160" y="20">
+    <tspan x="-160" y="20"></tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-200" y="-100">
+    <tspan x="-200" y="-100">The "remote" db: database of zabbix</tspan>
+    <tspan x="-200" y="-84">- read-only, and read only by</tspan>
+    <tspan x="-200" y="-68">  two habbix commands</tspan>
+    <tspan x="-200" y="-52">- configuration (habbix):</tspan>
+    <tspan x="-200" y="-36">  yaml: `remoteDatabase`</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="140" y1="150.713" x2="140" y2="229.287"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="140,143.213 145,153.213 140,150.713 135,153.213 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="140,236.787 135,226.787 140,229.287 145,226.787 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="160" y="180">
+    <tspan x="160" y="180">The zab2.go web server invokes the habbix</tspan>
+    <tspan x="160" y="196">command in $PATH</tspan>
+    <tspan x="160" y="212">- communication: stdin/stdout, JSON</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="260" y="80">
+    <tspan x="260" y="80"></tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="260" y="80">
+    <tspan x="260" y="80">Habbix: a CLI program, communicates</tspan>
+    <tspan x="260" y="96">with everything but the client browsers.</tspan>
+    <tspan x="260" y="112">In its own repo, `multi-axis/habbix` and</tspan>
+    <tspan x="260" y="128">cabal-packaged.</tspan>
+    <tspan x="260" y="144">- configuration: ./config.yaml</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="260" y="240">
+    <tspan x="260" y="240">Go webserver: self-contained in file zab2.go</tspan>
+    <tspan x="260" y="256">in repo multi-axis/multi-axis-graphs.</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="260" y="-80">
+    <tspan x="260" y="-80">Prediction executables: self-contained binaries</tspan>
+    <tspan x="260" y="-64">- history data in, predicted future data out</tspan>
+    <tspan x="260" y="-48">- configuration: `model` table in local db</tspan>
+    <tspan x="260" y="-32">  (modified via `habbix configure`)</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-200" y="100">
+    <tspan x="-200" y="100">The "local" db: our own db</tspan>
+    <tspan x="-200" y="116">- schema defined in habbix</tspan>
+    <tspan x="-200" y="132">  created with `habbix migrate`</tspan>
+    <tspan x="-200" y="148">- read and write by both habbix</tspan>
+    <tspan x="-200" y="164">  and web server</tspan>
+    <tspan x="-200" y="180">- configuration yaml `localDatabase`</tspan>
+    <tspan x="-200" y="196">  and zab2.go</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="140" y1="310.713" x2="140" y2="389.287"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="140,303.213 145,313.213 140,310.713 135,313.213 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="140,396.787 135,386.787 140,389.287 145,386.787 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="60,400 240,400 240,460 40,460 40,406 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="60,400 240,400 240,460 40,460 40,406 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="145" y="435.5">
+      <tspan x="145" y="435.5">Web pages</tspan>
+    </text>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="160" y="360">
+    <tspan x="160" y="360">HTTP</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="260" y="420">
+    <tspan x="260" y="420">/dashboard: static html, go templates</tspan>
+    <tspan x="260" y="436">/&lt;host&gt;/&lt;metric&gt;: (NV)D3.js</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-200" y="360">
+    <tspan x="-200" y="360">The web server fetches everything</tspan>
+    <tspan x="-200" y="376">from db that is there. Also updates</tspan>
+    <tspan x="-200" y="392">tables `item_future` and `threshold`.</tspan>
+    <tspan x="-200" y="408"></tspan>
+    <tspan x="-200" y="424">Just testing predictions is done</tspan>
+    <tspan x="-200" y="440">straight via `habbix execute`.</tspan>
+  </text>
+</svg>
