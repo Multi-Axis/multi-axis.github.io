@@ -1,8 +1,12 @@
 body {
     color: black;
-    font-size: 16px;
+    font-size: 20px;
     margin: 0px auto 0px auto;
-    width: 600px;
+    width: 45em;
+}
+
+img {
+   max-width:100%;
 }
 
 div#header {
@@ -42,11 +46,11 @@ div#footer {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 2rem;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 1.4rem;
 }
 
 div.info {
