@@ -29,7 +29,13 @@
 , &quot;values&quot; : [&lt;values&gt;]          // y values
 , &quot;last&quot;   : [&lt;epoch&gt;,&lt;value&gt;]   // (time, value) of last tick in history
 , &quot;draw_future&quot; : [&lt;epochs&gt;]     // bounds within which to extrapolate future with model
-, &quot;params&quot; : { ... }             // Extra parameters, forecast-unit specific
+, &quot;params&quot; :
+  { &quot;stop_lower&quot;: &lt;epoch&gt;        // start of prediction range (negative
+                                 // units relative to current time) (optional)
+  , &quot;stop_upper&quot;: &lt;epoch&gt;        // End of prediction range in data (optional) 
+  , &quot;predict_length&quot;: &lt;days&gt;     // Number of days to produce prediction for (default one week)
+  , ...                          // Extra forecast-unit specific params (optional)
+  }
 }</code></pre>
 <p>Additionally, the name of the model is passed as the first command line parameter.</p>
 <h3 id="output">Output</h3>
