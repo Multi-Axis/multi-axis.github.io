@@ -18,7 +18,13 @@ object (dubbed as an *Event*):
     , "values" : [<values>]          // y values
     , "last"   : [<epoch>,<value>]   // (time, value) of last tick in history
     , "draw_future" : [<epochs>]     // bounds within which to extrapolate future with model
-    , "params" : { ... }             // Extra parameters, forecast-unit specific
+    , "params" :
+      { "stop_lower": <epoch>        // start of prediction range (negative
+                                     // units relative to current time) (optional)
+      , "stop_upper": <epoch>        // End of prediction range in data (optional) 
+      , "predict_length": <days>     // Number of days to produce prediction for (default one week)
+      , ...                          // Extra forecast-unit specific params (optional)
+      }
     }
 
 Additionally, the name of the model is passed as the first command line
