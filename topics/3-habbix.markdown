@@ -3,6 +3,8 @@ title: Habbix
 date: 2014-12-12T00:00:00
 ---
 
+[Haskellers see here](/haddock).
+
 ## Configuration
 
 Copy the file `config.default.yaml` to `./config.yaml` and edit the parameters
