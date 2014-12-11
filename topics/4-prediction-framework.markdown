@@ -17,12 +17,13 @@ object (dubbed as an *Event*):
     , "clocks" : [<epochs>]          // list of epoch times (x values)
     , "values" : [<values>]          // y values
     , "last"   : [<epoch>,<value>]   // (time, value) of last tick in history
-    , "draw_future" : [<epochs>]     // bounds within which to extrapolate future with model
+    , "draw_future" : [<epochs>]     // Requested value of "clocks"
     , "params" :
       { "stop_lower": <epoch>        // start of prediction range (negative
                                      // units relative to current time) (optional)
       , "stop_upper": <epoch>        // End of prediction range in data (optional) 
-      , "predict_length": <days>     // Number of days to produce prediction for (default one week)
+      , "predict_length": <days>     // User's requested length for predictions
+                                        (saved in DB) (if null, default: one week)
       , ...                          // Extra forecast-unit specific params (optional)
       }
     }
