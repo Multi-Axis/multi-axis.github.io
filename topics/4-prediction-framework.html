@@ -28,12 +28,13 @@
 , &quot;clocks&quot; : [&lt;epochs&gt;]          // list of epoch times (x values)
 , &quot;values&quot; : [&lt;values&gt;]          // y values
 , &quot;last&quot;   : [&lt;epoch&gt;,&lt;value&gt;]   // (time, value) of last tick in history
-, &quot;draw_future&quot; : [&lt;epochs&gt;]     // bounds within which to extrapolate future with model
+, &quot;draw_future&quot; : [&lt;epochs&gt;]     // Requested value of &quot;clocks&quot;
 , &quot;params&quot; :
   { &quot;stop_lower&quot;: &lt;epoch&gt;        // start of prediction range (negative
                                  // units relative to current time) (optional)
   , &quot;stop_upper&quot;: &lt;epoch&gt;        // End of prediction range in data (optional) 
-  , &quot;predict_length&quot;: &lt;days&gt;     // Number of days to produce prediction for (default one week)
+  , &quot;predict_length&quot;: &lt;days&gt;     // User's requested length for predictions
+                                    (saved in DB) (if null, default: one week)
   , ...                          // Extra forecast-unit specific params (optional)
   }
 }</code></pre>
