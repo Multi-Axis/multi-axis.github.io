@@ -3,12 +3,13 @@ title: Getting Started
 date: 2014-12-12T00:00:00
 ----
 
-To get the database setup, simply configure `config.yaml` from habbix, possibly
-create the database (`createdb -O multi-axis multiaxis`) and then run `habbix
-migrate-db`.
+To setup the database:
 
-Next you wil want to sync local "meta" (that is, all but history tables) tables
-from zabbix: `habbix sync-db -s`.
+- Create the database (`createdb -O multi-axis multiaxis`)
+- Set `localDatabase` and `remoteDatabase` in `config.yaml` (for habbix)
+- Run `habbix migratedb`.
+- Sync local "meta" (that is, all but history tables) tables from zabbix:
+  `habbix sync -s`.
 
 The history tables are rather large (over 300k rows *with a single server*), so
 it is not wise to sync all of them.
@@ -23,7 +24,7 @@ want to copy or link the `linreg` binary from habbix:
      cd future_models
      ln -s ~/.cabal/bin/linreg .
 
-Then register it in the database: `habbix add-model linreg`.  Refer to section
+Then register it in the database: `habbix configure -e linreg`.  Refer to section
 "Predictions" for more info on models.
 
 Now you can register some items in the database. To see what items have any
@@ -32,20 +33,24 @@ history, you can e.g. do something like this on the **remote zabbix db**:
     zabbix=> select distinct itemid from history;
     zabbix=> select distinct itemid from history_uint;
 
-When you now the itemid you want to add (say, 20000), just say
+You need to know the itemid you want to add. For example's sake let's have a
+fictional items.itemid = 20000 and configure a prediction for it with the model
+with modelid = 1:
 
-    habbix new-future 20000 1
+    habbix configure -i 20000 -m 1
 
-The 1 specifies the model to use (see `habbix ls-models`).
+(Tip: List all models with `habbix models`.)
 
 Now you can synchronize the history from the remote db and predict the future:
 
-    habbix sync-db
+    habbix sync
 
-(That syncs only histories and futures; if you have added new hosts, you will
-need to run habbix `sync-db -s` first.)
+That syncs only histories and futures; if you have added new hosts, you will
+need to run habbix `sync -s` first.
 
 ## Optimizations
+
+DB indices; increases dashboard performance manyfold.
 
     create index history_idx on history (itemid, clock);
     create index trend_idx on trend (itemid, clock);
