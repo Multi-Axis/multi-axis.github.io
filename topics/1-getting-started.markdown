@@ -9,7 +9,7 @@ date: 2014-12-12T00:00:00
 - Set `localDatabase` and `remoteDatabase` in `config.yaml` (for habbix)
 - Run `habbix migratedb`.
 - Sync local "meta" (that is, all but history tables) tables from zabbix:
-  `habbix sync -s`.
+  `habbix sync --syncall`.
 
 The history tables are rather large (over 300k rows *with a single server*), so
 it is not wise to sync all of them.
@@ -50,7 +50,7 @@ Now you can synchronize the history from the remote db and predict the future:
     habbix sync
 
 That syncs only histories and futures; if you have added new hosts, you will
-need to run habbix `sync -s` first.
+need to run habbix `sync --syncall` first.
 
 ## Web server
 
