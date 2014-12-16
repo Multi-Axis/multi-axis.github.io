@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Multi-Axis - Backend server (Gobbix?)</title>
+        <title>Multi-Axis - Backend server (Gobbix)</title>
         <link rel="stylesheet" type="text/css" href="../css/default.css" />
     </head>
     <body>
@@ -16,26 +16,29 @@
             </div>
         </div>
         <div id="content">
-            <h1>Backend server (Gobbix?)</h1>
+            <h1>Backend server (Gobbix)</h1>
             <div class="info">
     
 </div>
 
 <p>This server (written in Go) handles passing data to and from html/javascript <a href="https://github.com/Multi-Axis/multi-axis-graphs/wiki/Server-view-front-end-notes">front end</a> and dashboard to the <a href="https://github.com/Multi-Axis/multi-axis-graphs/blob/master/Doc/Habbix.md">Habbix back end</a> and the <a href="https://github.com/Multi-Axis/multi-axis-graphs/blob/master/Doc/DatabaseAndData.md">multi-axis database</a>.</p>
 <p>Server <a href="https://github.com/Multi-Axis/multi-axis-graphs/blob/master/zab2.go">source code.</a></p>
-<p>Using <code>deploy.sh</code> to deploy the server is recommended. Compiling requires <a href="https://github.com/lib/pq">this postgres driver</a>.</p>
+<p>Using <code>deploy.sh</code> to deploy the server is recommended. Compiling requires <a href="https://github.com/lib/pq">this postgres driver</a>. Server does not start without a <code>habbix</code> binary present.</p>
 <ul>
 <li>URL:s ending with <code>[ip]:8080/dashboard</code> will lead to dashboard.</li>
 <li><code>[ip]:8080/static/</code> is used to deliver javascript and css files.</li>
-<li><code>[ip]:8080/item/:server/:item</code> (for example <em>item/ohtu1/cpu</em>) leads to specific graphs for items, and is also currently (somewhat stupidly) used to deliver JSON files which has some “amusing” side effects with client-side web caching.</li>
+<li><code>[ip]:8080/item/:server/:item</code> (for example <em>item/ohtu1/cpu</em>) leads to specific graphs for items.</li>
+<li><code>[ip]:8080/api/:id</code> (for example <em>api/1</em>) is used to deliver JSON files.</li>
 <li>Incorrect URL:s will result in 404 errors.</li>
 </ul>
+<p>The server can be configured to connect to a specific (local or piped) database with <code>-s :server-name</code>, and ordered to run Habbix (see below) with a specific configuration file with <code>-h :config-file-name</code>.</p>
+<h3 id="interaction-with-habbix">Interaction with Habbix</h3>
+<p>The server does most of its thing by directly interacting with the database. However, it calls for Habbix in two cases: * <code>habbix sync -i :id</code> after updating some item’s parameters in the DB. This makes Habbix actually update the item-specific forecast. * <code>habbix execute</code> (+stuff) to get forecast data <em>without</em> updating the database. If Habbix execution fails for whatever reason the server logs it and carries on.</p>
 <h3 id="known-issues-and-whatnot.">Known issues and whatnot.</h3>
 <ul>
-<li><code>/dashboard</code> is used instead of <code>/</code> because using the latter occasionally had <code>itemHandler</code> to also call for <code>dashboardHandler</code> (!?)</li>
-<li>dashboard’s sql query is a tad slow.</li>
-<li>The server is <em>probably</em> protected against typical sql injection attacks, but will happily send all kinds of wacky stuff from front end’s <em>“Model details”</em> field to the forecast models, so be warned.</li>
-<li>Currently most errors are handled elegantly by <code>log.Fatal(err)</code>, e.g. server dies on purpose if something goes wrong. This includes problems with the database or Habbix…</li>
+<li><code>/dashboard</code> is used instead of <code>/</code> because using the latter occasionally had <code>itemHandler</code> to also call for <code>dashboardHandler</code> (?!)</li>
+<li>The server is <em>probably</em> protected against typical sql injection attacks, but will happily send all kinds of wacky stuff from front end’s <em>“parameters”</em> field to the forecast models, as long as it is valid JSON, so be warned.</li>
+<li>Some errors are handled elegantly by <code>log.Fatal(err)</code>, e.g. server dies on purpose if something goes wrong. This <em>should</em> not include any actually common errors. Probably.</li>
 </ul>
 
         </div>
