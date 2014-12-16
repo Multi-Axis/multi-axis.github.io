@@ -15,9 +15,9 @@ Using `deploy.sh` to deploy the server is recommended. Compiling  requires [this
 * `[ip]:8080/api/:id` (for example *api/1*) is used to deliver JSON files.
 * Incorrect URL:s will result in 404 errors.
 
-The server can be configured to connect to a specific (local or piped) database with `-s :server-name`, and ordered to run habbix (see below) with a specific configuration file with `-h :config-file-name`.
+The server can be configured to connect to a specific (local or piped) database with `-s :server-name`, and ordered to run Habbix (see below) with a specific configuration file with `-h :config-file-name`.
 
-###Local and nonlocal habbix.
+###Interaction with Habbix
 The server does most of its thing by directly interacting with the database. However, it calls for Habbix in two cases:
 * `habbix sync -i :id` after updating some item's parameters in the DB. This makes Habbix actually update the item-specific forecast.
 * `habbix execute` (+stuff) to get forecast data *without* updating the database.
