@@ -26,7 +26,7 @@
 <li>Create the database (<code>createdb -O multi-axis multiaxis</code>)</li>
 <li>Set <code>localDatabase</code> and <code>remoteDatabase</code> in <code>config.yaml</code> (for habbix)</li>
 <li>Run <code>habbix migratedb</code>.</li>
-<li>Sync local “meta” (that is, all but history tables) tables from zabbix: <code>habbix sync -s</code>.</li>
+<li>Sync local “meta” (that is, all but history tables) tables from zabbix: <code>habbix sync --syncall</code>.</li>
 </ul>
 <p>The history tables are rather large (over 300k rows <em>with a single server</em>), so it is not wise to sync all of them.</p>
 <h2 id="first-prediction-unit">First prediction unit</h2>
@@ -44,7 +44,7 @@ zabbix=&gt; select distinct itemid from history_uint;</code></pre>
 <h2 id="data-synchronization-with-habbix">Data synchronization with habbix</h2>
 <p>Now you can synchronize the history from the remote db and predict the future:</p>
 <pre><code>habbix sync</code></pre>
-<p>That syncs only histories and futures; if you have added new hosts, you will need to run habbix <code>sync -s</code> first.</p>
+<p>That syncs only histories and futures; if you have added new hosts, you will need to run habbix <code>sync --syncall</code> first.</p>
 <h2 id="web-server">Web server</h2>
 <p>In a nutshell: run <code>go run zab2.go</code> at the root of the multi-axis-graphs repo. You probably need to change db connection settings inside the go file to reflect those in config.yaml.</p>
 <h3 id="optimizations">Optimizations</h3>
