@@ -4,7 +4,7 @@ date: 2014-12-12T00:00:00
 ---
 Tester [source code.](https://github.com/Multi-Axis/multi-axis-graphs/blob/master/zab2_integration_test.go)
 
-Tests are run automatically by Travis when a new commit is pushed to project's github repo.
+Tests are run automatically by [Travis](https://travis-ci.org/Multi-Axis/multi-axis-graphs/) when a new commit is pushed to project's github repo.
 
 Testing is implemented by using the standard Go testing facilities to first initialize the testing by building and running zab2.go and connecting it and Habbix to a special test database, which is reset by Travis from a db dump before running the tests, and then sending a bunch of http queries to the server. Tests check if the received data matches the expected values (specified in various test slices [slice = kinda-array in Go]) before and after the test database is updated . Specifically:
 
