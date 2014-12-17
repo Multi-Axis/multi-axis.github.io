@@ -22,7 +22,7 @@
 </div>
 
 <p>Tester <a href="https://github.com/Multi-Axis/multi-axis-graphs/blob/master/zab2_integration_test.go">source code.</a></p>
-<p>Tests are run automatically by Travis when a new commit is pushed to project’s github repo.</p>
+<p>Tests are run automatically by <a href="https://travis-ci.org/Multi-Axis/multi-axis-graphs/">Travis</a> when a new commit is pushed to project’s github repo.</p>
 <p>Testing is implemented by using the standard Go testing facilities to first initialize the testing by building and running zab2.go and connecting it and Habbix to a special test database, which is reset by Travis from a db dump before running the tests, and then sending a bunch of http queries to the server. Tests check if the received data matches the expected values (specified in various test slices [slice = kinda-array in Go]) before and after the test database is updated . Specifically:</p>
 <ul>
 <li><code>TestWrongUrl</code> tests that faulty url:s receive 404 errors.</li>
